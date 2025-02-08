@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPoise</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <!-- Hamburger Menu (Visible in Mobile View) -->
+        <button class="hamburger">&#9776;</button>
+        <img src="Logo/white.png" alt="Logo" class="logo">
+        <button class="close-menu">&times;</button>
+
+        <!-- Desktop Navigation (Visible in Desktop View) -->
+        <nav class="desktop-nav">
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li class="dropdown">
+                    <a href="#services" class="dropbtn">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="#services">Business Website Design</a>
+                        
+                        <div class="dropdown" id="digitalMarketingDropdown">
+                            <a href="#services" class="dropbtn">Digital Marketing &raquo;</a>
+                            <div class="dropdown-content sub-menu" id="digitalMarketingSubMenu">
+                                <a href="#services">Digital Marketing</a>
+                                <a href="#services">Social Media Management</a>
+                                <a href="#services">Portfolio for Students/Employees</a>
+                                <a href="#services">Search Engine Optimization</a>
+                                <a href="#services">Influencer Marketing</a>
+                                <a href="#services">Lead Generation</a>
+                            </div>
+                        </div>
+
+                        <a href="#services">E-Commerce Development</a>
+                        <a href="#services">AI-Integration and Development</a>
+                        <a href="#services">Academic Project Assistance</a>
+                        <a href="#services">Graphic Designing</a>
+                        <a href="#services">Logo/Label Designing</a>
+                    </div>
+                </li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+                <div class="header_contact">
+                    <a href="tel:9448863356" class="contact-button">944-886-3356</a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Menu (Only for Mobile View) -->
+    <nav class="mobile-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0);" class="service-link">Services ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#services">Business Website Design</a></li>
+                    <li class="sub-dropdown">
+                        <a href="#services">Digital Marketing ▾</a>
+                        <ul class="sub-dropdown-menu">
+                            <li><a href="#services">Digital Marketing</a></li>
+                            <li><a href="#services">Social Media Management</a></li>
+                            <li><a href="#services">Portfolio for Students/Employees</a></li>
+                            <li><a href="#services">Search Engine Optimization</a></li>
+                            <li><a href="#services">Influencer Marketing</a></li>
+                            <li><a href="#services">Lead Generation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#services">E-Commerce Development</a></li>
+                    <li><a href="#services">AI Integration and Development</a></li>
+                    <li><a href="#services">Academic Project Assistance</a></li>
+                    <li><a href="#services">Graphic Designing</a></li>
+                    <li><a href="#services">Logo/Label Designing</a></li>
+                </ul>
+            </li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="mobile-buttons">
+                <a href="#contact" class="btn get-started">Get Started</a>
+                <a href="tel:9448863356" class="btn contact-btn">944-886-3356</a>
+            </div>
+        </ul>
+    </nav>
+
+
+    <!-- Sections -->
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <h2>Innovate, Captivate & Elevate Web Solutions Engineered for Impact.</h2>
+            <p>
+                At WEBPOISE, we craft digital experiences that go beyond aesthetics—built for performance, engagement, 
+                and growth. With expertise in modern development and user-centric design, we create fully custom, 
+                SEO-optimized websites tailored to your brand’s unique needs. No templates, no shortcuts—just powerful 
+                web solutions that convert visitors into customers.
+            </p>
+            <h3>Your Vision. Our Expertise. Real Results.</h3>
+            <h4>Let’s build something extraordinary.</h4>
+            <div class="home-extra">
+                <button>Learn More</button>
+            </div>
+        </div>
+        <model-viewer id="threedd" src="assets/hello_world.glb" autoplay camera-controls disable-zoom auto-rotate shadow-intensity="0">
+        </model-viewer>
+    </section>
+
+    
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-header">
+                <h1>ABOUT US</h1>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>WHO ARE WE,</h3>
+                    <h2>At WEBPOISE, we are a dynamic startup specializing in crafting visually captivating websites enriched with cutting-edge 3D models and interactive elements.</h2>
+                    <p>
+                        Our mission is to redefine the digital experience by integrating 3D designs that not only enhance aesthetics but also engage and attract customers like never before. With a focus on creativity and innovation, we aim to empower businesses with unique, immersive web solutions tailored to their brand’s vision.                    </p>
+                    <p>
+                        Although we’re at the beginning of our journey, our passionate team is committed to delivering performance-driven websites that leave lasting impressions. Whether you're looking to elevate your brand identity or captivate your audience with next-generation web experiences, WEBPOISE is here to bring your ideas to life.                    </p>
+                        <div class="about-button">
+                            <a href="our-works.html" class="btn-works">OUR WORKS</a>
+                        </div>
+                </div>
+                <div class="about-achievement">
+                    <div class="achievement-circle">
+                        <p>WEBPOISE</p>
+                        <h1>2+</h1>
+                        <p>Years of Excellence</p>
+                    </div>
+                </div>
+                <div class="mission-vision-section">
+                    <div class="mission-vision-container">
+                        <div class="mission-card">
+                            <div class="icon">
+                                <img src="assets/mission_logo.png" alt="Our Mission Icon">
+                            </div>
+                            <h2>Our Mission</h2>
+                            <hr>
+                            <p>
+                                At WEBPOISE, our mission is to empower businesses by creating immersive, visually stunning websites 
+                                integrated with 3D elements. We aim to transform how brands connect with their audiences by delivering 
+                                customized, innovative solutions that enhance engagement and drive growth.
+                            </p>
+                        </div>
+                        <div class="vision-card">
+                            <div class="icon">
+                                <img src="assets/vission_logo.png" alt="Our Vision Icon">
+                            </div>
+                            <h2>Our Vision</h2>
+                            <hr>
+                            <p>
+                                To be a global leader in 3D-powered web development, known for innovation and creativity. Our vision is 
+                                to revolutionize the digital landscape by building websites that captivate audiences and elevate brands 
+                                to new heights of success.
+                            </p>
+                        </div>
+            </div>
+        </div>
+        </div>
+    </section>
+           
+
+
+    <section id="services" class="services-section"><br>
+        <h1>Our Services</h1><br><br>
+        <div class="service-item">
+            <img src="assets/Web development.png" alt="Website Development">
+            <h3>Website Development with <br>  3D Integration</h3>
+            <p>We create visually stunning websites with 3D integration, offering interactive experiences that captivate and engage visitors. Our innovative approach ensures your website leaves a lasting impression, setting your business apart.</p>
+        </div>
+        <div class="service-item">
+            <img src="assets/E-Commerce.webp" alt="E-Commerce Development">
+            <h3>E-Commerce Development</h3>
+            <p>We design dynamic and responsive e-commerce websites that deliver a seamless shopping experience. From intuitive interfaces to secure transactions, we build platforms that drive sales and elevate your online business.</p>
+        </div>
+        <div class="service-item">
+            <img src="assets/AI0.jpg" alt="AI-Integration and Development">
+            <h3>AI-Integration and Development</h3>
+            <p>We integrate advanced AI solutions like chatbots into websites and apps, enhancing user interaction. Additionally, we develop custom AI models to optimize processes, offering tailored intelligence to meet your specific business needs.</p>
+        </div>
+        <div class="service-item">
+            <img src="assets/Digital_marketing.jpg" alt="Digital Marketing">
+            <h3>Digital Marketing</h3>
+            <p>We craft personalized digital marketing strategies that amplify your brand’s online visibility. Through SEO, social media, and targeted campaigns, we drive engagement and create meaningful connections with your audience.</p>
+        </div>
+        <div class="service-item">
+            <img src="assets/Mobile-App-Development.png" alt="App Development">
+            <h3>App Development</h3>
+            <p>We develop intuitive and feature-rich mobile apps tailored to your business needs. Our focus is on delivering seamless, user-friendly experiences across platforms, ensuring your app stands out in today’s competitive market.</p>
+        </div>
+        <div class="service-item">
+            <img src="assets/Graphic_design.jpg" alt="Graphic Designing">
+            <h3>Graphic Designing</h3>
+            <p>Our graphic design services create compelling visuals that tell your brand’s story. From creative layouts to stunning illustrations and video editing, we enhance your brand’s identity with dynamic graphics that engage and captivate your audience.   </p>
+        </div>
+        <div class="service-item">
+            <img src="assets/Projects_assistence.jpg" alt="Academic Project Assistance">
+            <h3>Academic Project Assistance</h3>
+            <p>We provide high-quality project solutions for students in engineering and various other streams. Our services help you develop practical skills, complete academic requirements, and enhance your portfolio with industry-relevant projects.</p>
+        </div>
+        <div class="service-item">
+            <img src="assets/influencer-marketing-social-media-or-network-promotion-vector.jpg" alt="Influencer marketing">
+            <h3>Influencer marketing</h3>
+            <p>We connect your brand with influential voices to create authentic and impactful campaigns. By leveraging influencer partnerships, we boost your reach and drive engagement with your target audience.</p>
+        </div>
+        <div class="service-item">
+            <img src="assets/label-design-170940377.jpg" alt="Label Designing">
+            <h3>Logo/Label Designing</h3>
+            <p>We design unique and memorable logos and labels that reflect your brand’s identity. Our designs are tailored to leave a lasting impression, making your business easily recognizable and appealing to customers.</p>
+        </div>
+        <div class="service-item">
+            <img src="assets/Lead-Generation-Concept.jpg" alt="Lead Generation">
+            <h3>Lead Generation</h3>
+            <p>We specialize in generating high-quality leads that convert into valuable customers. Our data-driven strategies and targeted campaigns help attract and nurture prospects, fueling your business growth.</p>
+        </div>
+        <div class="service-item">
+            <img src="assets/Social_media_managing.jpg" alt="Social Media Manegment">
+            <h3>Social Media Manegment</h3>
+            <p>We provide expert Social Media Management services to boost your brand’s online presence and increase sales. Our strategies are designed to expand your reach, engage your audience, and make your business stand out in the digital space.</p>
+        </div>
+        <div class="service-item">
+            <img src="assets/Portfolio_Students.png" alt="Social Media Manegment">
+            <h3>Portfolio for Students/Employees</h3>
+            <p>We create professional portfolios and portfolio websites for students, employees, graphic designers, photographers, and videographers. Our designs showcase your skills and expertise, making your profile stand out and attract valuable opportunities.</p>
+        </div>
+        </section>
+        
+    
+    <!-- contact form section -->
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <section class="contact-section" style="background-image: url('assets/contact_form_background_image.jpg');">
+            <div class="contact-form-container">
+                <h2>LET'S TALK</h2>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+
+                    <div class="form-group">
+                        <input type="hidden" name="access_key" value="a6ba606d-9e43-458d-92a0-9af0c48e8d77">
+                        <input type="text" name="first_name" placeholder="First Name*" required>
+                        <input type="text" name="last_name" placeholder="Last Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="text" name="phone" placeholder="Business Phone*" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="company" placeholder="Company Name" required>
+                        <input type="text" name="state" placeholder="State/Province*" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="website" placeholder="Website Address">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Please tell us about your project/Any Query." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">SUBMIT REQUEST</button>
+                </form>
+            </div>
+        </section>
+
+        
+
+        <footer>
+            <div class="footer-container">
+                <div class="left-section">
+                    <button class="get-started">GET STARTED</button>
+                    <button class="contact-btn">944-886-3356</button>
+                </div>
+        
+                <div class="right-section">
+                    <div class="footer-menu">
+                        <div class="menu-column">
+                            <h3><a href="#home">HOME</a></h3>
+                            <h3><a href="#about">ABOUT</a></h3>
+                            <h3><a href="#services">SERVICES</a></h3>
+                            <h3><a href="#portfolio">PORTFOLIO</a></h3>
+                            <h3><a href="#contact">CONTACT</a></h3>
+                        </div>
+        
+                        <div class="menu-column">
+                            <h3>SERVICES</h3>
+                            <p><a href="#services">Business Website Design</a></p>
+                            <p><a href="#services">E-Commerce Development</a></p>
+                            <p><a href="#services">AI-Integration and Development</a></p>
+                            <p><a href="#services">Graphic Designing</a></p>
+                            <p><a href="#services">Logo/Label Designing</a></p>
+                        </div>
+        
+                        <div class="menu-column">
+                            <h3>DIGITAL MARKETING</h3>
+                            <p><a href="#services">Digital Marketing</a></p>
+                            <p><a href="#services">Search Engine optimization</a></p>
+                            <p><a href="#services">Influencer marketing</a></p>
+                            <p><a href="#services">Lead Generation</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Social Media, Company Info, Privacy Policy section moved below in the footer container -->
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/company/webpoise/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/webpoise?igsh=YnplbzRtMDNrOGdo" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="contact-info">944-886-3356 - 636-408-1029</p>
+                <p class="copyright">© 2024 - 2025 WEBPOISE Technologies.</p>
+                <p class="links">
+                    <a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a>
+                </p>
+            </div>
+        </footer>
+    
+
+
+
+      
+
+
+</body>
+</html>
