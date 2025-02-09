@@ -111,6 +111,27 @@ body {
     color: white;
 }
 
+/* Ensure dropdown menu stays open when clicked */
+.dropdown-menu {
+    display: none;
+    position: relative;
+    background-color: #333;
+}
+
+.dropdown-menu.show {
+    display: block !important;
+}
+
+/* Ensure sub-dropdown works correctly */
+.sub-dropdown-menu {
+    display: none;
+}
+
+.sub-dropdown.show .sub-dropdown-menu {
+    display: block;
+}
+
+
 
 /* Mobile Menu */
 /* Mobile Menu */

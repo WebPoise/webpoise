@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const homeLink = document.querySelector(".hide-on-mobile:nth-child(1)");
     const aboutLink = document.querySelector(".hide-on-mobile:nth-child(2)");
     const menuLinks = document.querySelectorAll(".mobile-menu a"); // All menu links
-    const serviceLink = document.querySelector(".dropdown > a"); // Services dropdown link
-    const dropdownItems = document.querySelectorAll(".dropdown-menu a"); // Items inside dropdown
+    const serviceLink = document.querySelector(".service-link"); // Services dropdown link
+    const dropdownMenu = document.querySelector(".dropdown-menu");
 
     // Function to open the mobile menu
     function openMenu() {
@@ -52,6 +52,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 subSubmenu.parentElement.classList.toggle("show");
             }
         });
+    });
+
+    serviceLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        dropdownMenu.classList.toggle("show");
     });
 
     // Close menu when clicking outside of it
